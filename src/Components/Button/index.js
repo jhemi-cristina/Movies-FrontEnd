@@ -1,8 +1,10 @@
-import { Buttons } from "./styles";
+import { Container } from "./styles";
 
-const Button = ({ title, value, type, onChange }) => {
+const Button = ({ title, loading, ...rest }) => {
   return (
-    <Buttons title={title} value={value} onChange={onChange} type={type} />
+    <Container type="button" disabled={loading} {...rest}>
+      {loading ? "Carregando..." : title}
+    </Container>
   );
 };
 

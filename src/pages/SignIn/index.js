@@ -13,7 +13,7 @@ const SignIn = () => {
         <h2>Faça seu login</h2>
         <Input placeholder="E-mail" type="email" icon={FaRegEnvelope} />
         <Input placeholder="Senha" type="password" icon={FaLock} />
-        <Button>Entrar</Button>
+        <Button title="Entrar" />
         <Link to="/register">Criar Conta</Link>
       </Form>
       <Background />

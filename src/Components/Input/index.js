@@ -1,8 +1,8 @@
-import { InputItem } from "./styles";
+import { Container } from "./styles";
 
 const Input = ({ placeholder, icon, value, onChange }) => {
   return (
-    <InputItem
+    <Container
       placeholder={placeholder}
       value={value}
       onChange={onChange}
