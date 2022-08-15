@@ -1,42 +1,48 @@
 import styled from "styled-components";
+import backgroundImg from "../../Assets/backgroundImage.png";
 
 export const Container = styled.div`
-  min-height: 100vh;
-  background-color: #1c1b1e;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
 `;
 
-export const Image = styled.img``;
+export const Form = styled.form`
+  padding: 0 136px;
 
-export const HeaderPage = styled.h1`
-  color: #ff859b;
-  font-size: 25px;
-  margin: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1c1b1e;
 
-  p {
-    color: #cac4cf;
+  > h1 {
+    font-size: 48px;
+    color: #ff859b;
+  }
+
+  > h2 {
+    font-size: 24px;
+    margin: 48px 0;
+    color: #f4ede8;
+  }
+
+  > p {
     font-size: 14px;
+    color: #cac4cf;
     margin: 0px;
+  }
+
+  > a {
+    margin-top: 60px;
+    color: #ff859b;
+    text-decoration: none;
   }
 `;
 
-export const Form = styled.div``;
-
-export const Login = styled.div`
-  justify-content: center;
-  align-items: center;
-  display: grid;
-`;
-
-export const LoginInput = styled.input`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 8px;
-  width: 300px;
-  height: 50px;
-  border-radius: 9px;
-  border-style: none;
-  cursor: pointer;
-  border: none;
-  background-color: #262529;
+export const Background = styled.div`
+  flex: 1;
+  background: url(${backgroundImg}) no-repeat center center;
+  background-size: cover;
 `;

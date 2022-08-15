@@ -1,26 +1,22 @@
-import { Container, Form, HeaderPage, Image, Login } from "./styles";
-import { InputItem } from "../../Components/Input/styles";
+import { Background, Container, Form } from "./styles";
+import { FaLock, FaRegEnvelope } from "react-icons/fa";
+import { Button } from "../../Components/Button";
+import { Input } from "../../Components/Input";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
     <Container>
-      {/* <Image
-        src={backgroundImage}
-        alt="Uma imagem de cinema, com cadeiras vermelhas."
-      /> */}
-      <HeaderPage>
+      <Form>
         <h1>RocketAnime</h1>
         <p>Aplicação para acompanhar tudo que assistir.</p>
-      </HeaderPage>
-
-      <Form>
-        <p>Faça seu login</p>
-        <Login>
-          {/* <FaRegEnvelope /> */}
-          <InputItem placeholder="E-mail" type="email" />
-          <InputItem placeholder="Senha" type="password" />
-        </Login>
+        <h2>Faça seu login</h2>
+        <Input placeholder="E-mail" type="email" icon={FaRegEnvelope} />
+        <Input placeholder="Senha" type="password" icon={FaLock} />
+        <Button>Entrar</Button>
+        <Link to="/register">Criar Conta</Link>
       </Form>
+      <Background />
     </Container>
   );
 };
