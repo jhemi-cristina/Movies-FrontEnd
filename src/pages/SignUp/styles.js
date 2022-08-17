@@ -39,6 +39,13 @@ export const Form = styled.form`
     margin-top: 60px;
     color: #ff859b;
     text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    svg {
+      margin-right: 10px;
+    }
   }
 `;
 
