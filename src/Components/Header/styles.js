@@ -4,6 +4,7 @@ export const Container = styled.div`
   grid-area: header;
   height: 105px;
   font-family: "Roboto Slab";
+  font-style: normal;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
