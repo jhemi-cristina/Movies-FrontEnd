@@ -1,7 +1,8 @@
 import { Header } from "../../Components/Header";
 import { Section } from "../../Components/Section";
+import { Tags } from "../../Components/Tags";
 import { Button } from "./../../Components/Button";
-import { Container, Movies, Card } from "./styles";
+import { Container, Movies, Card, TagsMovies } from "./styles";
 
 const Dashboard = () => {
   return (
@@ -34,6 +35,10 @@ const Dashboard = () => {
           humanidade irá seguir para ele na instalação da NASA, que é na
           realidade uma enorme estação espacial. A partida de Cooper devasta
           Murphy.
+          <TagsMovies>
+            <Tags title="Ficção Científica" />
+            <Tags title="Drama" />
+          </TagsMovies>
         </Section>
       </Card>
     </Container>

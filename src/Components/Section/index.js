@@ -1,4 +1,5 @@
 import { Container } from "./styles";
+import { Tags } from "./../Tags";
 
 const Section = ({ icon, title, children }) => {
   return (

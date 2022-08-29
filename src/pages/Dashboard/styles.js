@@ -25,6 +25,11 @@ export const Movies = styled.div`
     width: 207px;
   }
 `;
+
+export const TagsMovies = styled.div`
+  margin-top: 30px;
+`;
+
 export const Card = styled.div`
   color: #999591;
   margin: 56px 0 28px;
